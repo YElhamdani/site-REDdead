@@ -1,0 +1,154 @@
+/* --- RESET CSS --- */
+
+body{
+    margin: 0;
+  }
+  
+  h1,h2,h3,h4,p,ul,div,span{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 100;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+
+  
+  /* --- FIN RESET --- */
+  
+  
+  /* --- FONT FACE --- */
+  
+  @font-face {
+    font-family: "Marston";
+    src: url("fonts/Marston.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Marston";
+    src: url("fonts/Marston-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  
+  /* --- FIN FONT FACE --- */
+  
+  
+  body{
+    font-family: "Marston", sans-serif;
+    overflow: hidden;
+
+  }
+  main{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  nav{
+    width: 60vw;
+    position: absolute;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    background-color: #282828;
+
+  }
+    nav ul li{
+      padding: 30px;
+      font-size: 30px;
+      color: white
+    }
+      .personnage{
+        text-decoration: none;
+      }
+        .histoire{
+          color: red;
+        }
+            nav ul li:hover{
+              color: red;
+            }
+  
+  
+  .leftContent{
+    color: white;
+    background-color: #282828;
+    width:60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .leftContent h1{
+      margin-top: 30%;
+      font-size: 45px;
+      margin-bottom: 5%;
+    }
+      .leftContent p{
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+      }
+        .leftContent iframe{
+          margin-top: 5%;
+        }
+  
+  
+  .rigthContent{
+    width: 40vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #E93030;
+    z-index: 1;
+  }
+    .rigthContent h2 {
+      position: relative;
+      left: -113px;
+      top: 25%;
+      font-size: 50px;
+      color: #282828;
+      align-self: flex-start;
+      transform: rotate(90deg);
+    }
+      .rigthContent h3{
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        width: 80%;
+        margin-top:15%;
+      }
+       .rigthContent .arthure{
+          width: 31vw;
+          bottom: 0;
+          position: fixed;
+          left: 75%;
+       }
+          .rigthContent .dutch{
+            width: 32vw;
+            bottom: 0;
+            position: fixed;
+            left: 60%;
+          }
+
+@media(min-width:1650px){
+  .rigthContent .arthure{
+    width: 27vw;
+    bottom: 0;
+    position: fixed;
+    left: 75%;
+ }
+    .rigthContent .dutch{
+      width: 27vw;
+      bottom: 0;
+      position: fixed;
+      left: 60%;
+    }
+}
